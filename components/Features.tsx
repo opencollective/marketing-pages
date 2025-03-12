@@ -97,7 +97,7 @@ export default function Features({}) {
                     >
                       <div
                         className={cn(
-                          "rounded-4xl border overflow-clip aspect-square transition-opacity",
+                          "rounded-4xl border w-full overflow-clip aspect-square transition-opacity relative",
                           "bg-gradient-to-b from-primary/80 to-primary/100",
                           isActive ? "opacity-100" : "opacity-0"
                         )}
@@ -105,17 +105,27 @@ export default function Features({}) {
                         {img && (
                           <div
                             className={cn(
-                              "w-full h-full flex items-center justify-center"
+                              "w-full relative h-full flex items-center justify-center"
                             )}
                             style={img.containerStyle}
                           >
-                            <Image
-                              src={img.src}
-                              width={img.srcWidth}
-                              height={img.srcHeight}
-                              alt={img.alt ?? item.title}
-                              style={img.style}
-                            />
+                            {img.src.startsWith("/") ? (
+                              <Image
+                                src={img.src}
+                                width={img.srcWidth}
+                                height={img.srcHeight}
+                                alt={img.alt ?? item.title}
+                                style={img.style}
+                              />
+                            ) : (
+                              <img
+                                src={img.src}
+                                style={img.style}
+                                width={img.srcWidth}
+                                height={img.srcHeight}
+                                alt={img.alt ?? item.title}
+                              />
+                            )}
                           </div>
                         )}
                       </div>
