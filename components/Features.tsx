@@ -56,7 +56,7 @@ export default function Features({}) {
   };
 
   return (
-    <section className="py-24 px-4 flex gap-18 relative" ref={containerRef}>
+    <section className="py-24 px-6 flex gap-18 relative" ref={containerRef}>
       <div className="w-4/10 py-40">
         {featureSections.map((section, sectionIndex) => (
           <FeatureSection

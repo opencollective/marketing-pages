@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <main className="min-h-screen max-w-7xl mx-auto flex flex-col">
       {/* Hero Section */}
-      <div className="px-4 py-6">
+      <div className="px-6 py-6">
         <Logo />
       </div>
       <section className="w-full pt-48">
-        <div className="container mx-auto px-4 text-left">
+        <div className="px-6 text-left">
           <h1 className="text-5xl font-semibold mb-6 text-left max-w-prose">
             Manage money together, <br />
             without the complexity of <br />{" "}
