@@ -19,28 +19,25 @@ export default function Home() {
               className=""
               transition={{
                 type: "spring",
-                stiffness: 900,
-                damping: 80,
-                mass: 10,
+                stiffness: 100,
+                damping: 20,
+                mass: 1,
               }}
               variants={{
                 initial: {
                   y: 20,
                   rotateX: 90,
                   opacity: 0,
-                  filter: "blur(4px)",
                 },
                 animate: {
                   y: 0,
                   rotateX: 0,
                   opacity: 1,
-                  filter: "blur(0px)",
                 },
                 exit: {
                   y: -20,
                   rotateX: -90,
                   opacity: 0,
-                  filter: "blur(4px)",
                 },
               }}
             >

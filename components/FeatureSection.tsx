@@ -14,7 +14,7 @@ import React from "react";
 export type TFeatureSection = {
   title: string;
   description?: string;
-  colorVariable?: string;
+  tailwindColor?: string;
   items: {
     title: string;
     description: string;
@@ -59,11 +59,9 @@ export default function FeatureSection({
   };
 
   // Create a style object to locally set the --primary variable if provided
-  const sectionStyle = section.colorVariable
+  const sectionStyle = section.tailwindColor
     ? ({
-        "--primary": section.colorVariable.startsWith("--")
-          ? `var(${section.colorVariable})`
-          : section.colorVariable,
+        "--primary": `var(--color-${section.tailwindColor})`,
       } as React.CSSProperties)
     : undefined;
 
