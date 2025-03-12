@@ -18,8 +18,8 @@ export const mediaSchema = z.object({
 
 // Feature item schema
 export const featureItemSchema = z.object({
-  title: z.string().min(1, "Title is required"),
-  description: z.string().min(1, "Description is required"),
+  title: z.string().min(1, "Feature title is required"),
+  description: z.string().min(1, "Feature description is required"),
   media: mediaSchema.optional(),
 });
 
@@ -68,8 +68,8 @@ export const tailwindColorEnum = z.enum(generateColorVariants());
 
 // Feature section schema
 export const featureSectionSchema = z.object({
-  title: z.string().min(1, "Title is required"),
-  description: z.string().optional(),
+  title: z.string().min(1, "Section title is required"),
+  description: z.string().min(1, "Section description is required"),
   tailwindColor: tailwindColorEnum.optional().superRefine((val, ctx) => {
     if (val !== undefined && !tailwindColorEnum.safeParse(val).success) {
       ctx.addIssue({

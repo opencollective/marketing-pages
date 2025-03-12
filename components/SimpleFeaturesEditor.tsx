@@ -18,6 +18,9 @@ import {
 import dynamic from "next/dynamic";
 import { ZodError, ZodIssue } from "zod";
 import { Pen } from "lucide-react";
+import { zodToJsonSchema } from "zod-to-json-schema";
+import type { editor } from "monaco-editor";
+import type { Monaco } from "@monaco-editor/react";
 
 // Dynamically import Monaco Editor with no SSR to avoid hydration issues
 const MonacoEditor = dynamic(
@@ -26,6 +29,12 @@ const MonacoEditor = dynamic(
 );
 
 const LOCAL_STORAGE_KEY = "features-editor-data";
+
+// Convert Zod schema to JSON schema for Monaco
+const jsonSchema = zodToJsonSchema(featureSectionsSchema, {
+  $refStrategy: "none",
+  errorMessages: true,
+});
 
 export default function SimpleFeaturesEditor({
   onSave,
@@ -57,8 +66,26 @@ export default function SimpleFeaturesEditor({
   }, []);
 
   // Handle editor mounting
-  const handleEditorDidMount = () => {
+  const handleEditorDidMount = (
+    editor: editor.IStandaloneCodeEditor,
+    monaco: Monaco
+  ) => {
     setIsEditorReady(true);
+
+    // Set up JSON validation based on our schema
+    monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+      validate: true,
+      schemas: [
+        {
+          uri: "http://opencollective/schemas/feature-sections.json", // A unique URI for this schema
+          fileMatch: ["*"], // Apply to all JSON files
+          schema: jsonSchema,
+        },
+      ],
+      enableSchemaRequest: false,
+    });
+
+    // No need for the interval-based validation since we want errors to show only on save
   };
 
   // Handle text changes in the editor
@@ -94,12 +121,11 @@ export default function SimpleFeaturesEditor({
       } else {
         // Format and display the actual validation errors
         const errorMessages = formatZodErrors(result.error);
-        setStatus("Error: Invalid JSON syntax");
+        setStatus(`Error: ${errorMessages}`);
         alert(`Error: ${errorMessages}`);
       }
     } catch {
       setStatus("Error: Invalid JSON syntax");
-      //   alert(`Error: ${errorMessages}`)
     }
   };
 
@@ -284,7 +310,7 @@ export default function SimpleFeaturesEditor({
             className="hidden"
           />
 
-          <SheetFooter className="flex-shrink-0 mt-2 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <SheetFooter className="flex-shrink-0 mt-2 flex flex-col items-start  gap-4">
             <div className="flex items-center gap-2">
               <Button onClick={handleSave} disabled={!isEditorReady}>
                 Save
