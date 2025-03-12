@@ -8,17 +8,24 @@ import {
 } from "@/components/motion-primitives/accordion";
 
 import { cn } from "@/lib/utils";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import React from "react";
 
 export type TFeatureSection = {
   title: string;
   description?: string;
-  mediaContentClassName?: string;
+  colorVariable?: string;
   items: {
     title: string;
     description: string;
-    longDescription?: string;
-    media?: React.ReactNode;
+    media?: {
+      src: string | StaticImport;
+      srcWidth: number;
+      srcHeight: number;
+      alt?: string;
+      containerClasses?: string;
+      mediaClasses?: string;
+    };
   }[];
 };
 
@@ -51,10 +58,20 @@ export default function FeatureSection({
     }
   };
 
+  // Create a style object to locally set the --primary variable if provided
+  const sectionStyle = section.colorVariable
+    ? ({
+        "--primary": section.colorVariable.startsWith("--")
+          ? `var(${section.colorVariable})`
+          : section.colorVariable,
+      } as React.CSSProperties)
+    : undefined;
+
   return (
     <div
       key={section.title}
       ref={sectionRef}
+      style={sectionStyle}
       className={cn(
         "min-h-[70dvh] flex flex-col items-start justify-start transition-opacity",
         isActive ? "opacity-100" : "opacity-50"
