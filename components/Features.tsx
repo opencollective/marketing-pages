@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import FeatureSection from "./FeatureSection";
 import SimpleFeaturesEditor from "./SimpleFeaturesEditor";
 import Image from "next/image";
@@ -8,7 +8,6 @@ import { FeatureSections } from "@/lib/schemas/feature-section-schema";
 import { featureSections as defaultFeatureSections } from "@/data/feature-sections";
 
 const LOCAL_STORAGE_KEY = "features-editor-data";
-console.log("Features component using LOCAL_STORAGE_KEY:", LOCAL_STORAGE_KEY);
 
 export default function Features({}) {
   const containerRef = useRef(null);
@@ -16,8 +15,6 @@ export default function Features({}) {
   const [featureSections, setFeatureSections] = useState<FeatureSections>(
     defaultFeatureSections
   );
-  // Create refs for each feature section
-  const sectionRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   // Track active sub-items for each section
   const [activeSectionItems, setActiveSectionItems] = useState<number[]>(
@@ -38,38 +35,9 @@ export default function Features({}) {
     }
   }, []);
 
-  // Check if each section is in view
-  useEffect(() => {
-    // Create IntersectionObserver instances for each section
-    const observers = sectionRefs.current.map((ref, index) => {
-      if (!ref) return null;
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            // If the section is entering the viewport and is more than 20% visible
-            if (entry.isIntersecting && entry.intersectionRatio > 0.2) {
-              setActiveIndex(index);
-            }
-          });
-        },
-        {
-          // Options: trigger when 20% of the element is visible
-          // Adjust this threshold for earlier/later activation
-          threshold: 0.2,
-          // Add rootMargin for additional padding/offset
-          rootMargin: "-20% 0px -60% 0px", // Trigger earlier (top offset)
-        }
-      );
-
-      observer.observe(ref);
-      return observer;
-    });
-
-    // Cleanup observers on unmount
-    return () => {
-      observers.forEach((observer) => observer?.disconnect());
-    };
+  // Handle section becoming visible
+  const handleSectionVisible = useCallback((index: number) => {
+    setActiveIndex(index);
   }, []);
 
   // Handle sub-item selection
@@ -83,22 +51,13 @@ export default function Features({}) {
 
   // Handle saving editor changes
   const handleSaveFeatures = (data: FeatureSections) => {
-    console.log("handleSaveFeatures called in Features component", { data });
     setFeatureSections(data);
     setActiveSectionItems(data.map(() => 0)); // Reset active items when data changes
   };
 
-  // Add effect to monitor featureSections state changes
-  useEffect(() => {
-    console.log("Feature sections state updated:", featureSections);
-  }, [featureSections]);
-
   return (
     <section className="py-24 px-4 flex gap-18 relative" ref={containerRef}>
       <div className="w-4/10 py-40">
-        <div className="fixed right-6 top-6">
-          <SimpleFeaturesEditor onSave={handleSaveFeatures} />
-        </div>
         {featureSections.map((section, sectionIndex) => (
           <FeatureSection
             key={`${section.title}-${sectionIndex}`}
@@ -108,9 +67,7 @@ export default function Features({}) {
               handleItemSelect(sectionIndex, itemIndex)
             }
             isActive={activeIndex === sectionIndex}
-            sectionRef={(el: HTMLDivElement | null) => {
-              sectionRefs.current[sectionIndex] = el;
-            }}
+            onBecomeVisible={handleSectionVisible}
           />
         ))}
       </div>
@@ -149,7 +106,6 @@ export default function Features({}) {
                           <div
                             className={cn(
                               "w-full h-full flex items-center justify-center"
-                              //   img?.containerClasses
                             )}
                             style={img.containerStyle}
                           >
@@ -170,6 +126,9 @@ export default function Features({}) {
             ))}
           </div>
         </div>
+      </div>
+      <div className="fixed right-6 top-6">
+        <SimpleFeaturesEditor onSave={handleSaveFeatures} />
       </div>
     </section>
   );
