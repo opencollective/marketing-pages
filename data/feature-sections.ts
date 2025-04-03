@@ -5,15 +5,20 @@ export const featureSections: FeatureSections = [
   {
     title: "Financial Platform",
     description:
-      "An integrated toolbox for collaboratively and transparently managing your finances.",
-    tailwindColor: "blue-600",
+      "An integrated toolbox for collaboratively and transparently managing  your finances.",
+    tailwindColor: "sky-100",
     items: [
       {
-        title: "Dashboard",
+        title: "Everything you need to know & do in one place",
         description:
           "Your dashboard brings together all the tools you need to collaboratively manage your finances and stay on top of financial transactions that require your attention.",
         media: {
-          src: "/dashboard.png",
+          src: "https://drive.google.com/u/0/drive-viewer/AKGpihaxReCVPn7TzMpOKVseKrqq5h0fhivPMMAMqz5Cbh6S5eUS6sL_KU4ZcXiCeujdvU5QHjaZM_ffadkqCp_iUT1AoxZX2wXXZA=s1600-rw-v1",
+          // src: "https://uc92bf3f013d1b3a4919fe994bd6.previews.dropboxusercontent.com/p/thumb/ACltqqnG1nvLuY3LXSRHeaxzRw4lVN1GeCIylr4J0OGHPV22MHZGe5ALJVDx_9iNXs0-3YjT1UJ2SujN4ZJw3ik7a0KLD6SAcazsXjZXAL9gAoJt4HOfxwFXmncifjbWxciru-qHNtLrPh4M_zmV8rLtrW9Hoj2FmGWOK0BdSEKT43Ag7QUy2vlnoQ9y7xUyYpub8sH5cy2DTabiAUPkcpqYRtzyAEFBLHvO4prhNvgcLXrGyFnh01U8PAx8L-A_wOdV_P6-XtWDtp_KXBsK0W-t0tm68MjS1MNAe4BIdSaJkP-uh-kaQl8UUUstKC1vb-affd9KWGSWtJYgZU2xEHBqdsV9_Bba4ryXLxfF4wWNaqo1QuT4utoWv87Ho1o_uzg/p.jpeg",
+          //src: "http://drive.google.com/uc?export=view&id=1Uc4dyWTdsAChm2L-o3NHm_QJ6-nEEsOb",
+          // src: "http://drive.usercontent.google.com/download?id=1Uc4dyWTdsAChm2L-o3NHm_QJ6-nEEsOb",
+          // src: "https://drive.usercontent.google.com/download?id=1Uc4dyWTdsAChm2L-o3NHm_QJ6-nEEsOb&export=view&authuser=0",
+          // src: "https://drive.google.com/file/d/1Uc4dyWTdsAChm2L-o3NHm_QJ6-nEEsOb/view?usp=sharing",
           srcWidth: 2529,
           srcHeight: 1759,
           alt: "Dashboard",
@@ -26,7 +31,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Accounts",
+        title: "Organize your money",
         description:
           "Organize your money and control your spending with accounts. Create accounts for holding reserves, for crowdfunding contributions and for spending.",
         media: {
@@ -43,7 +48,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Real Time Balance",
+        title: "Check your balance",
         description:
           "Money added to an account increases its balance and money spent (or transferred) will decrease its balance. You always know where you stand because the balance is always up-to-date and verifiable.",
         media: {
@@ -60,9 +65,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Internal Transfers",
+        title: "Move money between accounts",
         description:
-          "Transfer money easily between accounts. Starting a new project? Transfer an allocated amount into a separate account in order to manage spending. ",
+          "Transfer money easily between accounts. Starting a new project? Transfer an allocated amount into a separate account in order to manage spending.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -77,7 +82,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Account Permissions",
+        title: "Give people control",
         description:
           "Assign administrators to control spending in specific accounts. Add or transfer money into the accounts them and let them manage spending on their own.",
         media: {
@@ -94,7 +99,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Public Profile",
+        title: "Tell the world your financial story",
         description:
           "Activate a public profile to make yourself and your financials visible to the world and to invite broader engagement with  crowdfunding campaigns and payment requests.",
         media: {
@@ -111,7 +116,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Custom Domains",
+        title: "Integrate your story into your website",
         description:
           "Direct public facing profiles to your own domain and rebrand the platform to make it your own.",
         media: {
@@ -132,10 +137,10 @@ export const featureSections: FeatureSections = [
   {
     title: "Money In",
     description: "Document & track all incoming money.",
-    tailwindColor: "green-600",
+    tailwindColor: "green-100",
     items: [
       {
-        title: "Add Funds",
+        title: "Add money to your accounts",
         description:
           "When money shows up in your bank account or a check is received and processed, add it to an account and it is immediately available for disbursement.",
         media: {
@@ -152,7 +157,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Contributions",
+        title: "Accept contributions",
         description:
           "Setup crowdfunding campaigns to engage your community. Completed contributions are automatically recorded in the ledger and added to your account balances.",
         media: {
@@ -169,7 +174,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Expected Funds",
+        title: "Track promised funds",
         description:
           "Have you been awarded a grant and are now expecting payments to arrive? Document and track expected income until it arrives and is added to your accounts.",
         media: {
@@ -191,10 +196,10 @@ export const featureSections: FeatureSections = [
     title: "Money Out",
     description:
       "A comprehensive suite of tools for submitting, review, correcting, approving and paying out disbursements. A small team of administrators can efficiently support hundreds of projects and thousands of people requesting to get paid.",
-    tailwindColor: "red-600",
+    tailwindColor: "rose-50",
     items: [
       {
-        title: "Payment Requests",
+        title: "Accept requests from people asking to get paid",
         description:
           "A step-by-step payment request submission form will walk users through filing correct and complete payment requests. Include your own unique instructions on how to properly submit a payment request in order to get paid.",
         media: {
@@ -211,7 +216,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Invitations",
+        title: "Invite people to get paid",
         description:
           "Send payment request invitations to people who are not on the platform. They will receive an invitation that will guide them to create a new user, complete and submit the payment request.",
         media: {
@@ -245,7 +250,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Pay Disbursements",
+        title: "Pay approved payment requests",
         description:
           "One tool bring together all the information you need to quickly and effectively pay approved payment requests and other disbursements.",
         media: {
@@ -262,7 +267,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Automatic Balance Protection",
+        title: "Spend within your balance",
         description:
           "Automatic balance protection guarantees that you only pay expenses that can be covered by current account balances.",
         media: {
@@ -279,7 +284,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Integrated Payment",
+        title: "Automatically send payments",
         description:
           "Pay automatically using Wise & Paypal integrations or manually mark expenses that have been paid off-platform (for example: from your bank account) as paid.",
         media: {
@@ -296,7 +301,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Antifraud Security Checks",
+        title: "Automated security checks protect against fraud",
         description:
           "Real time security checks are integrated into the payment tool and will alert you if something is suspicious. A green fraud indicator means you can safely make a payment. A red fraud indicator means you should stop and review the request.",
         media: {
@@ -313,9 +318,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Communicate",
+        title: "Quickly resolve issues",
         description:
-          "Each expense is an automatic communication channel with all the people involved in its submission, review and payment. All communications are recorded for future reference. ",
+          "Each expense is an automatic communication channel with all the people involved in its submission, review and payment. All communications are recorded for future reference.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -330,9 +335,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Organize",
+        title: "Easily work your way through all payment requests",
         description:
-          "Mark payment requests as “incomplete” when they are sent back to submitters for correction. Mark them as “on hold” while you are looking into them with your accountant or lawyer.",
+          "Mark payment requests as “incomplete” when they are sent back to submitters for correction. Mark them as “on hold” while you are looking into them with your accountant or lawyer. ",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -352,10 +357,10 @@ export const featureSections: FeatureSections = [
     title: "Hosting",
     description:
       "Invite other groups to operate under your financial and legal umbrella as Collectives. With a small team using the platform you can efficiently support thousands of groups and projects.",
-    tailwindColor: "indigo-600",
+    tailwindColor: "yellow-50",
     items: [
       {
-        title: "Hosted Collectives",
+        title: "Host other groups ",
         description:
           "Collectives are mini-organizations within your organization. Each collective can setup their own accounts, crowdfunding campaigns and projects.",
         media: {
@@ -372,7 +377,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Invite Collectives",
+        title: "Invite groups to join you",
         description:
           "Invite new groups to become hosted collectives within your organization. Create a new collective and invitations will be sent out to the team inviting them to join the platform and collaborate on their finances.",
         media: {
@@ -389,7 +394,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Applications",
+        title: "Accept applications from groups looking for a host",
         description:
           "Accept applications from groups that are interested in being hosted by you. A conversation thread within each application documents the review and acceptance process until they are either accepted (and become hosted collectives) or rejected.",
         media: {
@@ -406,9 +411,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Real-time Balance",
+        title: "Collectives autonomously manage their finances",
         description:
-          "Collectives always have access to up-to-date balances in their accounts and can operate autonomously. ",
+          "Collectives always have access to up-to-date balances in their accounts and can operate autonomously.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -423,7 +428,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Approve Expenses",
+        title: "Collectives decide which expenses to pay",
         description:
           "Collectives can independently review and approve their own expenses. Approved expenses will await your review and payment.",
         media: {
@@ -440,9 +445,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Review & Pay Hosted Collective Expenses",
+        title: "Efficiently process payment requests",
         description:
-          "Payment requests approved by collectives are automatically checked against their balances. If the collective balance is not sufficient to pay the request you will not see it. It will be held until the collective balance is able to cover it.",
+          "All approved payment requests are checked against collective balances. When the balance is sufficient they show up in your queue of ready-to-pay expenses. ",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -457,7 +462,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Charge Hosting Fees",
+        title: "Charge hosting fees",
         description:
           "Automatically charge hosting fees from your hosted collectives Fees are automatically applied and tracked in the ledger and visible to both you and your hosted collectives.",
         media: {
@@ -479,12 +484,12 @@ export const featureSections: FeatureSections = [
     title: "Crowdfunding",
     description:
       "Create a variety of crowdfunding campaigns: simple tip-jar with one time contributions, one-time goals, monthly recurring goals and even yearly memberships for generating continuous income via crowdfunding.",
-    tailwindColor: "yellow-600",
+    tailwindColor: "purple-100",
     items: [
       {
-        title: "Flexible Tiers",
+        title: "Different ways to contribute",
         description:
-          "Flexible tiers enable you to create a diversity of crowdfunding campaigns. Design tiers that are appropriate for you and your audience. Collect tips, one time and recurring contributions.",
+          "FFlexible tiers enable you to create a diversity of crowdfunding campaigns. Design tiers that are appropriate for you and your audience. Collect tips, one time contributions and recurring contributions.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -499,85 +504,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Goals",
+        title: "Set & commit to funding goals",
         description:
           "Create one time goals for one time projects. Create recurring goals to ask your community for long term support.",
-        media: {
-          src: "/dashboard.png",
-          srcWidth: 2529,
-          srcHeight: 1759,
-          alt: "Dashboard",
-          style: {
-            borderRadius: "4px",
-          },
-          containerStyle: {
-            padding: "16px",
-          },
-        },
-      },
-      {
-        title: "Spend Responsibly",
-        description:
-          "Use crowdfunding accounts for paying payment requests to demonstrate to your community that the money raised was spent in alignment with the purpose and goals of the crowdfunding campaign.",
-        media: {
-          src: "/dashboard.png",
-          srcWidth: 2529,
-          srcHeight: 1759,
-          alt: "Dashboard",
-          style: {
-            borderRadius: "4px",
-          },
-          containerStyle: {
-            padding: "16px",
-          },
-        },
-      },
-    ],
-  },
-  {
-    title: "Funds & Grants",
-    description:
-      "Manage funds openly by showing where money came from, to whom it was granted and how it was spent.",
-    tailwindColor: "orange-600",
-    items: [
-      {
-        title: "On-platform Beneficiaries",
-        description:
-          "Invite beneficiaries to join the platform and transparently manage their grants as collectives. You and your funders can together observe how the grant money is actually spent.",
-        media: {
-          src: "/dashboard.png",
-          srcWidth: 2529,
-          srcHeight: 1759,
-          alt: "Dashboard",
-          style: {
-            borderRadius: "4px",
-          },
-          containerStyle: {
-            padding: "16px",
-          },
-        },
-      },
-      {
-        title: "Off-platform Beneficiaries",
-        description:
-          "Use the disbursement tools to send money to beneficiaries who do not interact with the platform.",
-        media: {
-          src: "/dashboard.png",
-          srcWidth: 2529,
-          srcHeight: 1759,
-          alt: "Dashboard",
-          style: {
-            borderRadius: "4px",
-          },
-          containerStyle: {
-            padding: "16px",
-          },
-        },
-      },
-      {
-        title: "Restricted Accounts",
-        description:
-          "Place grants that are given with agreed restrictions (for example, about purpose and desired outcomes into restricted accounts. This will keep the grants isolated from other funding sources making it possible to track how they are spent.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -597,10 +526,10 @@ export const featureSections: FeatureSections = [
     title: "Accounting & Accountability",
     description:
       "Review & verify financial activities and provide your accountants with reliable information for your accounting processes.",
-    tailwindColor: "teal-600",
+    tailwindColor: "orange-100",
     items: [
       {
-        title: "Ledger",
+        title: "All financial activities are recorded",
         description:
           "At the heart of the platform is a transaction ledger. All financial activities on the platform generate ledger transactions.",
         media: {
@@ -617,24 +546,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Immutability",
-        description:
-          "Once a transaction has been written to the ledger it cannot be changed. The ledger is the “source of truth” and the reason account balances can be trusted to indicate how much money is actually available to spend in any account at any given time. ",
-        media: {
-          src: "/dashboard.png",
-          srcWidth: 2529,
-          srcHeight: 1759,
-          alt: "Dashboard",
-          style: {
-            borderRadius: "4px",
-          },
-          containerStyle: {
-            padding: "16px",
-          },
-        },
-      },
-      {
-        title: "Traceability",
+        title: "Trace and verify all financial activities",
         description:
           "All financial platform activities (payment requests, contributions, grants, etc.) can be traced to their related ledger transactions and vice versa.",
         media: {
@@ -651,7 +563,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Transaction Statement",
+        title: "Legible financial summaries ",
         description:
           "A periodic (monthly, quarterly, yearly) transaction statement provides you an overview of ledger activity. Drill down into every number in the statement to review and verify the underlying ledger transactions.",
         media: {
@@ -668,9 +580,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Ledger export",
+        title: "Export ledger data for your accountants",
         description:
-          "The ledger accumulates a lot of detailed information. Your accountants will need this information in order to do your accounting. An elaborate export tool will let you setup and reliably export periodically the information your accountants need.",
+          "Provide your accountants with periodic exports of detailed ledger transactions.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -685,9 +597,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Chart of Accounts",
+        title: "Categorize financial activities for accounting",
         description:
-          "Setup your chart of accounts and categorize your disbursements and added funds. Include this in your exports and reduce the time, effort and accounting costs. ",
+          "Setup your chart of accounts and categorize your disbursements and added funds. Include this in your exports and reduce the time, effort and accounting costs.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -702,9 +614,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Connected Accounts",
+        title: "Connect your bank accounts",
         description:
-          "The platform is not bound to specific banks or financial services. Instead, connect your platform account to your banking services and reconcile off-platform transactions with on-platform financial activities. ",
+          "Connect your platform account to your preferred banking services and reconcile off-platform transactions with on-platform financial activities.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -719,9 +631,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Tax Forms",
+        title: "Collect tax forms",
         description:
-          "Automatically collect USA tax forms from people who get paid through the platform. At the end of the fiscal year you can download all the relevant tax-forms, ready to submit to the authorities.",
+          "Automatically collect USA tax forms from people who get paid through the platform. At the end of the fiscal year  download all the relevant tax-forms, ready to submit to the authorities.",
         media: {
           src: "/dashboard.png",
           srcWidth: 2529,
@@ -736,7 +648,7 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Agreements",
+        title: "Document financial agreements",
         description:
           "Upload and track financial agreements. Link agreements to hosted collectives and reference them when paying disbursements.",
         media: {

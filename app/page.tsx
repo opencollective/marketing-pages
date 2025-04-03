@@ -1,14 +1,22 @@
 import { TextLoop } from "@/components/motion-primitives/text-loop";
 
-import { Logo } from "@/components/Logo";
+// import { Logo } from "@/components/Logo";
 import Features from "@/components/Features";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen max-w-7xl mx-auto flex flex-col">
       {/* Hero Section */}
       <div className="px-6 py-6">
-        <Logo />
+        {/* <Logo /> */}
+        <Image
+          src="/oc-logo-watercolor-256.webp"
+          width="256"
+          height="256"
+          className="size-12"
+          alt="Open Collective logo"
+        />
       </div>
       <section className="w-full pt-48">
         <div className="px-6 text-left">

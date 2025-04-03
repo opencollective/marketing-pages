@@ -97,8 +97,10 @@ export default function Features({}) {
                     >
                       <div
                         className={cn(
-                          "rounded-4xl border w-full overflow-clip aspect-square transition-opacity relative",
-                          "bg-gradient-to-b from-primary/80 to-primary/100",
+                          "rounded-4xl w-full overflow-clip aspect-square transition-opacity relative",
+                          "bg-primary/20",
+
+                          // "bg-gradient-to-b from-primary/20 to-primary/30",
                           isActive ? "opacity-100" : "opacity-0"
                         )}
                       >
