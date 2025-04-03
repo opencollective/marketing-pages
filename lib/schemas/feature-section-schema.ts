@@ -78,6 +78,22 @@ export const featureSectionSchema = z.object({
       });
     }
   }),
+  fgColor: tailwindColorEnum.optional().superRefine((val, ctx) => {
+    if (val !== undefined && !tailwindColorEnum.safeParse(val).success) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'Color must be a valid Tailwind color, e.g., "blue-500"',
+      });
+    }
+  }),
+  bgColor: tailwindColorEnum.optional().superRefine((val, ctx) => {
+    if (val !== undefined && !tailwindColorEnum.safeParse(val).success) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'Color must be a valid Tailwind color, e.g., "blue-500"',
+      });
+    }
+  }),
   items: z
     .array(featureItemSchema)
     .min(1, "At least one feature item is required"),

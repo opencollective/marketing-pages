@@ -16,6 +16,8 @@ export type TFeatureSection = {
   title: string;
   description?: string;
   tailwindColor?: string;
+  fgColor?: string;
+  bgColor?: string;
   items: {
     title: string;
     description: string;
@@ -81,12 +83,20 @@ export default function FeatureSection({
   };
 
   // Create a style object to locally set the --primary variable if provided
-  const sectionStyle = section.tailwindColor
-    ? ({
-        "--primary": `var(--color-${section.tailwindColor})`,
-      } as React.CSSProperties)
-    : undefined;
+  // const sectionStyle = section.tailwindColor
+  //   ? ({
+  //       "--primary": `var(--color-${section.tailwindColor})`,
+  //     } as React.CSSProperties)
+  //   : undefined;
 
+  const sectionStyle = {
+    ...(section.fgColor && {
+      "--primary": `var(--color-${section.fgColor})`,
+    }),
+    ...(section.bgColor && {
+      "--card": `var(--color-${section.bgColor})`,
+    }),
+  } as React.CSSProperties;
   return (
     <div className="pb-[30dvh] last:pb-12">
       <div

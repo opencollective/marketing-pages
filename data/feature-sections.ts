@@ -6,7 +6,8 @@ export const featureSections: FeatureSections = [
     title: "Financial Platform",
     description:
       "An integrated toolbox for collaboratively and transparently managing  your finances.",
-    tailwindColor: "sky-100",
+    bgColor: "sky-100",
+    fgColor: "sky-600",
     items: [
       {
         title: "Everything you need to know & do in one place",
@@ -83,7 +84,8 @@ export const featureSections: FeatureSections = [
   {
     title: "Money In",
     description: "Document & track all incoming money.",
-    tailwindColor: "green-100",
+    bgColor: "green-100",
+    fgColor: "green-600",
     items: [
       {
         title: "Add money to your accounts",
@@ -121,7 +123,8 @@ export const featureSections: FeatureSections = [
     title: "Money Out",
     description:
       "A comprehensive suite of tools for submitting, review, correcting, approving and paying out disbursements. A small team of administrators can efficiently support hundreds of projects and thousands of people requesting to get paid.",
-    tailwindColor: "rose-50",
+    bgColor: "rose-50",
+    fgColor: "rose-600",
     items: [
       {
         title: "Accept requests from people asking to get paid",
@@ -219,7 +222,8 @@ export const featureSections: FeatureSections = [
     title: "Hosting",
     description:
       "Invite other groups to operate under your financial and legal umbrella as Collectives. With a small team using the platform you can efficiently support thousands of groups and projects.",
-    tailwindColor: "yellow-50",
+    bgColor: "yellow-50",
+    fgColor: "yellow-600",
     items: [
       {
         title: "Host other groups ",
@@ -297,7 +301,8 @@ export const featureSections: FeatureSections = [
     title: "Crowdfunding",
     description:
       "Create a variety of crowdfunding campaigns: simple tip-jar with one time contributions, one-time goals, monthly recurring goals and even yearly memberships for generating continuous income via crowdfunding.",
-    tailwindColor: "purple-100",
+    bgColor: "purple-100",
+    fgColor: "purple-600",
     items: [
       {
         title: "Different ways to contribute",
@@ -325,7 +330,8 @@ export const featureSections: FeatureSections = [
     title: "Accounting & Accountability",
     description:
       "Review & verify financial activities and provide your accountants with reliable information for your accounting processes.",
-    tailwindColor: "orange-100",
+    bgColor: "orange-100",
+    fgColor: "orange-600",
     items: [
       {
         title: "All financial activities are recorded",

@@ -84,11 +84,19 @@ export default function Features({}) {
                   const isActive =
                     activeIndex === sectionIndex &&
                     activeSectionItems[sectionIndex] === itemIndex;
-                  const sectionStyle = section.tailwindColor
-                    ? ({
-                        "--primary": `var(--color-${section.tailwindColor})`,
-                      } as React.CSSProperties)
-                    : undefined;
+                  // const sectionStyle = section.tailwindColor
+                  //   ? ({
+                  //       "--primary": `var(--color-${section.tailwindColor})`,
+                  //     } as React.CSSProperties)
+                  //   : undefined;
+                  const sectionStyle = {
+                    ...(section.fgColor && {
+                      "--primary": `var(--color-${section.fgColor})`,
+                    }),
+                    ...(section.bgColor && {
+                      "--card": `var(--color-${section.bgColor})`,
+                    }),
+                  } as React.CSSProperties;
                   return (
                     <div
                       key={`${item.title}-${itemIndex}`}
@@ -98,7 +106,7 @@ export default function Features({}) {
                       <div
                         className={cn(
                           "rounded-4xl w-full overflow-clip aspect-square transition-opacity relative",
-                          "bg-primary/20",
+                          "bg-card",
                           isActive ? "opacity-100" : "opacity-0"
                         )}
                       >
