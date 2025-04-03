@@ -105,7 +105,7 @@ export default function Features({}) {
                     >
                       <div
                         className={cn(
-                          "rounded-4xl w-full overflow-clip aspect-square transition-opacity relative",
+                          "rounded-4xl w-full overflow-clip aspect-square border border-slate-100 transition-opacity relative",
                           "bg-card",
                           isActive ? "opacity-100" : "opacity-0"
                         )}
@@ -115,7 +115,6 @@ export default function Features({}) {
                             className={cn(
                               "w-full relative h-full flex items-center justify-center"
                             )}
-                            // style={img.containerStyle}
                           >
                             {img.src.startsWith("/") ? (
                               <Image

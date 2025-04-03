@@ -14,7 +14,7 @@ export const featureSections: FeatureSections = [
         description:
           "Your dashboard brings together all the tools you need to collaboratively manage your finances and stay on top of financial transactions that require your attention.",
         media: {
-          src: "https://uc92bf3f013d1b3a4919fe994bd6.previews.dropboxusercontent.com/p/thumb/ACltqqnG1nvLuY3LXSRHeaxzRw4lVN1GeCIylr4J0OGHPV22MHZGe5ALJVDx_9iNXs0-3YjT1UJ2SujN4ZJw3ik7a0KLD6SAcazsXjZXAL9gAoJt4HOfxwFXmncifjbWxciru-qHNtLrPh4M_zmV8rLtrW9Hoj2FmGWOK0BdSEKT43Ag7QUy2vlnoQ9y7xUyYpub8sH5cy2DTabiAUPkcpqYRtzyAEFBLHvO4prhNvgcLXrGyFnh01U8PAx8L-A_wOdV_P6-XtWDtp_KXBsK0W-t0tm68MjS1MNAe4BIdSaJkP-uh-kaQl8UUUstKC1vb-affd9KWGSWtJYgZU2xEHBqdsV9_Bba4ryXLxfF4wWNaqo1QuT4utoWv87Ho1o_uzg/p.jpeg?is_prewarmed=true",
+          src: "/1.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -24,7 +24,7 @@ export const featureSections: FeatureSections = [
         description:
           "Organize your money and control your spending with accounts. Create accounts for holding reserves, for crowdfunding contributions and for spending.",
         media: {
-          src: "/accounts.png",
+          src: "/2.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -34,7 +34,7 @@ export const featureSections: FeatureSections = [
         description:
           "Money added to an account increases its balance and money spent (or transferred) will decrease its balance. You always know where you stand because the balance is always up-to-date and verifiable.",
         media: {
-          src: "/dashboard.png",
+          src: "/3.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -44,7 +44,7 @@ export const featureSections: FeatureSections = [
         description:
           "Transfer money easily between accounts. Starting a new project? Transfer an allocated amount into a separate account in order to manage spending.",
         media: {
-          src: "/dashboard.png",
+          src: "/4.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -54,7 +54,7 @@ export const featureSections: FeatureSections = [
         description:
           "Assign administrators to control spending in specific accounts. Add or transfer money into the accounts them and let them manage spending on their own.",
         media: {
-          src: "/dashboard.png",
+          src: "/5.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -64,7 +64,7 @@ export const featureSections: FeatureSections = [
         description:
           "Activate a public profile to make yourself and your financials visible to the world and to invite broader engagement with  crowdfunding campaigns and payment requests.",
         media: {
-          src: "/dashboard.png",
+          src: "/6.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -74,7 +74,7 @@ export const featureSections: FeatureSections = [
         description:
           "Direct public facing profiles to your own domain and rebrand the platform to make it your own.",
         media: {
-          src: "/dashboard.png",
+          src: "/7.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -92,7 +92,7 @@ export const featureSections: FeatureSections = [
         description:
           "When money shows up in your bank account or a check is received and processed, add it to an account and it is immediately available for disbursement.",
         media: {
-          src: "/dashboard.png",
+          src: "/8.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -102,7 +102,7 @@ export const featureSections: FeatureSections = [
         description:
           "Setup crowdfunding campaigns to engage your community. Completed contributions are automatically recorded in the ledger and added to your account balances.",
         media: {
-          src: "/dashboard.png",
+          src: "/9.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -112,7 +112,7 @@ export const featureSections: FeatureSections = [
         description:
           "Have you been awarded a grant and are now expecting payments to arrive? Document and track expected income until it arrives and is added to your accounts.",
         media: {
-          src: "/dashboard.png",
+          src: "/10.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -131,7 +131,7 @@ export const featureSections: FeatureSections = [
         description:
           "A step-by-step payment request submission form will walk users through filing correct and complete payment requests. Include your own unique instructions on how to properly submit a payment request in order to get paid.",
         media: {
-          src: "/dashboard.png",
+          src: "/11.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -141,7 +141,7 @@ export const featureSections: FeatureSections = [
         description:
           "Send payment request invitations to people who are not on the platform. They will receive an invitation that will guide them to create a new user, complete and submit the payment request.",
         media: {
-          src: "/dashboard.png",
+          src: "/12.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -149,9 +149,9 @@ export const featureSections: FeatureSections = [
       {
         title: "Approve Payment Requests",
         description:
-          "Review payment requests that have been submitted. Approve the legitimate requests you wish to pay.",
+          "Review payment requests that have been submitted. Approve the legitimate requests you wish to pay. ",
         media: {
-          src: "/dashboard.png",
+          src: "/13.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -161,7 +161,7 @@ export const featureSections: FeatureSections = [
         description:
           "One tool bring together all the information you need to quickly and effectively pay approved payment requests and other disbursements.",
         media: {
-          src: "/dashboard.png",
+          src: "/14.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -171,7 +171,7 @@ export const featureSections: FeatureSections = [
         description:
           "Automatic balance protection guarantees that you only pay expenses that can be covered by current account balances.",
         media: {
-          src: "/dashboard.png",
+          src: "/15.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -181,7 +181,7 @@ export const featureSections: FeatureSections = [
         description:
           "Pay automatically using Wise & Paypal integrations or manually mark expenses that have been paid off-platform (for example: from your bank account) as paid.",
         media: {
-          src: "/dashboard.png",
+          src: "/16.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -191,7 +191,7 @@ export const featureSections: FeatureSections = [
         description:
           "Real time security checks are integrated into the payment tool and will alert you if something is suspicious. A green fraud indicator means you can safely make a payment. A red fraud indicator means you should stop and review the request.",
         media: {
-          src: "/dashboard.png",
+          src: "/17.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -201,7 +201,7 @@ export const featureSections: FeatureSections = [
         description:
           "Each expense is an automatic communication channel with all the people involved in its submission, review and payment. All communications are recorded for future reference.",
         media: {
-          src: "/dashboard.png",
+          src: "/18.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -209,9 +209,9 @@ export const featureSections: FeatureSections = [
       {
         title: "Easily work your way through all payment requests",
         description:
-          "Mark payment requests as “incomplete” when they are sent back to submitters for correction. Mark them as “on hold” while you are looking into them with your accountant or lawyer. ",
+          'Mark payment requests as "incomplete" when they are sent back to submitters for correction. Mark them as "on hold" while you are looking into them with your accountant or lawyer.',
         media: {
-          src: "/dashboard.png",
+          src: "/19.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -230,17 +230,7 @@ export const featureSections: FeatureSections = [
         description:
           "Collectives are mini-organizations within your organization. Each collective can setup their own accounts, crowdfunding campaigns and projects.",
         media: {
-          src: "/dashboard.png",
-          srcWidth: 1400,
-          srcHeight: 1400,
-        },
-      },
-      {
-        title: "Invite groups to join you",
-        description:
-          "Invite new groups to become hosted collectives within your organization. Create a new collective and invitations will be sent out to the team inviting them to join the platform and collaborate on their finances.",
-        media: {
-          src: "/dashboard.png",
+          src: "/20.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -250,7 +240,7 @@ export const featureSections: FeatureSections = [
         description:
           "Accept applications from groups that are interested in being hosted by you. A conversation thread within each application documents the review and acceptance process until they are either accepted (and become hosted collectives) or rejected.",
         media: {
-          src: "/dashboard.png",
+          src: "/21.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -260,7 +250,7 @@ export const featureSections: FeatureSections = [
         description:
           "Collectives always have access to up-to-date balances in their accounts and can operate autonomously.",
         media: {
-          src: "/dashboard.png",
+          src: "/22.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -270,7 +260,7 @@ export const featureSections: FeatureSections = [
         description:
           "Collectives can independently review and approve their own expenses. Approved expenses will await your review and payment.",
         media: {
-          src: "/dashboard.png",
+          src: "/23.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -280,7 +270,7 @@ export const featureSections: FeatureSections = [
         description:
           "All approved payment requests are checked against collective balances. When the balance is sufficient they show up in your queue of ready-to-pay expenses. ",
         media: {
-          src: "/dashboard.png",
+          src: "/24.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -290,7 +280,7 @@ export const featureSections: FeatureSections = [
         description:
           "Automatically charge hosting fees from your hosted collectives Fees are automatically applied and tracked in the ledger and visible to both you and your hosted collectives.",
         media: {
-          src: "/dashboard.png",
+          src: "/25.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -309,7 +299,7 @@ export const featureSections: FeatureSections = [
         description:
           "FFlexible tiers enable you to create a diversity of crowdfunding campaigns. Design tiers that are appropriate for you and your audience. Collect tips, one time contributions and recurring contributions.",
         media: {
-          src: "/dashboard.png",
+          src: "/26.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -319,7 +309,7 @@ export const featureSections: FeatureSections = [
         description:
           "Create one time goals for one time projects. Create recurring goals to ask your community for long term support.",
         media: {
-          src: "/dashboard.png",
+          src: "/27.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -338,7 +328,7 @@ export const featureSections: FeatureSections = [
         description:
           "At the heart of the platform is a transaction ledger. All financial activities on the platform generate ledger transactions.",
         media: {
-          src: "/dashboard.png",
+          src: "/28.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -348,7 +338,7 @@ export const featureSections: FeatureSections = [
         description:
           "All financial platform activities (payment requests, contributions, grants, etc.) can be traced to their related ledger transactions and vice versa.",
         media: {
-          src: "/dashboard.png",
+          src: "/29.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -358,7 +348,7 @@ export const featureSections: FeatureSections = [
         description:
           "A periodic (monthly, quarterly, yearly) transaction statement provides you an overview of ledger activity. Drill down into every number in the statement to review and verify the underlying ledger transactions.",
         media: {
-          src: "/dashboard.png",
+          src: "/30.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -368,7 +358,7 @@ export const featureSections: FeatureSections = [
         description:
           "Provide your accountants with periodic exports of detailed ledger transactions.",
         media: {
-          src: "/dashboard.png",
+          src: "/31.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -378,7 +368,7 @@ export const featureSections: FeatureSections = [
         description:
           "Setup your chart of accounts and categorize your disbursements and added funds. Include this in your exports and reduce the time, effort and accounting costs.",
         media: {
-          src: "/dashboard.png",
+          src: "/32.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -388,7 +378,7 @@ export const featureSections: FeatureSections = [
         description:
           "Connect your platform account to your preferred banking services and reconcile off-platform transactions with on-platform financial activities.",
         media: {
-          src: "/dashboard.png",
+          src: "/33.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -398,7 +388,7 @@ export const featureSections: FeatureSections = [
         description:
           "Automatically collect USA tax forms from people who get paid through the platform. At the end of the fiscal year  download all the relevant tax-forms, ready to submit to the authorities.",
         media: {
-          src: "/dashboard.png",
+          src: "/34.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -408,7 +398,7 @@ export const featureSections: FeatureSections = [
         description:
           "Upload and track financial agreements. Link agreements to hosted collectives and reference them when paying disbursements.",
         media: {
-          src: "/dashboard.png",
+          src: "/35.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
