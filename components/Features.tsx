@@ -99,8 +99,6 @@ export default function Features({}) {
                         className={cn(
                           "rounded-4xl w-full overflow-clip aspect-square transition-opacity relative",
                           "bg-primary/20",
-
-                          // "bg-gradient-to-b from-primary/20 to-primary/30",
                           isActive ? "opacity-100" : "opacity-0"
                         )}
                       >
@@ -109,7 +107,7 @@ export default function Features({}) {
                             className={cn(
                               "w-full relative h-full flex items-center justify-center"
                             )}
-                            style={img.containerStyle}
+                            // style={img.containerStyle}
                           >
                             {img.src.startsWith("/") ? (
                               <Image

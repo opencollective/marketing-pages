@@ -129,7 +129,7 @@ export default function FeatureSection({
                 >
                   <div className="flex items-center justify-between text-slate-600 group-data-expanded:text-foreground group-hover:text-foreground transition-colors">
                     <div className="flex items-center gap-2.5">
-                      <div className="size-2 bg-gray-400 group-hover:bg-primary group-data-expanded:bg-primary transition-colors" />
+                      <div className="shrink-0 size-2 bg-gray-400 group-hover:bg-primary group-data-expanded:bg-primary transition-colors" />
                       <div>{feature.title}</div>
                     </div>
                   </div>
