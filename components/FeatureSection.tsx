@@ -112,9 +112,7 @@ export default function FeatureSection({
           {section.title}
         </h3>
         {section.description && (
-          <p className="text-muted-foreground mb-4 line-clamp-3">
-            {section.description}
-          </p>
+          <p className="text-muted-foreground mb-4">{section.description}</p>
         )}
         <Accordion
           className="flex w-full flex-col"
