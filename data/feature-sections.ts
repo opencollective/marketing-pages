@@ -12,7 +12,7 @@ export const featureSections: FeatureSections = [
       {
         title: "Everything you need to know & do in one place",
         description:
-          "Your dashboard brings together all the tools you need to collaboratively manage your finances and stay on top of financial transactions that require your attention.",
+          "Your dashboard brings together all the tools you need to collaboratively manage your finances and stay on top of financial activities that require your attention.",
         media: {
           src: "/1.png",
           srcWidth: 1400,
@@ -52,7 +52,7 @@ export const featureSections: FeatureSections = [
       {
         title: "Give people control",
         description:
-          "Assign administrators to control spending in specific accounts. Add or transfer money into the accounts them and let them manage spending on their own.",
+          "Assign administrators to manage specific accounts. Add or transfer money into the accounts them and let your team  manage spending on their own.",
         media: {
           src: "/5.png",
           srcWidth: 1400,
@@ -65,16 +65,6 @@ export const featureSections: FeatureSections = [
           "Activate a public profile to make yourself and your financials visible to the world and to invite broader engagement with  crowdfunding campaigns and payment requests.",
         media: {
           src: "/6.png",
-          srcWidth: 1400,
-          srcHeight: 1400,
-        },
-      },
-      {
-        title: "Integrate your story into your website",
-        description:
-          "Direct public facing profiles to your own domain and rebrand the platform to make it your own.",
-        media: {
-          src: "/7.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -92,7 +82,7 @@ export const featureSections: FeatureSections = [
         description:
           "When money shows up in your bank account or a check is received and processed, add it to an account and it is immediately available for disbursement.",
         media: {
-          src: "/8.png",
+          src: "/7.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -102,7 +92,7 @@ export const featureSections: FeatureSections = [
         description:
           "Setup crowdfunding campaigns to engage your community. Completed contributions are automatically recorded in the ledger and added to your account balances.",
         media: {
-          src: "/9.png",
+          src: "/8.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -112,7 +102,7 @@ export const featureSections: FeatureSections = [
         description:
           "Have you been awarded a grant and are now expecting payments to arrive? Document and track expected income until it arrives and is added to your accounts.",
         media: {
-          src: "/10.png",
+          src: "/9.png",
           srcWidth: 1400,
           srcHeight: 1400,
         },
@@ -122,14 +112,14 @@ export const featureSections: FeatureSections = [
   {
     title: "Money Out",
     description:
-      "A comprehensive suite of tools for submitting, review, correcting, approving and paying out disbursements. A small team of administrators can efficiently support hundreds of projects and thousands of people requesting to get paid.",
+      "A comprehensive suite of tools for submitting, review, correcting, approving and paying out disbursements. A small team of administrators can efficiently thousands of monthly payment requests.",
     bgColor: "rose-50",
     fgColor: "rose-600",
     items: [
       {
         title: "Accept requests from people asking to get paid",
         description:
-          "A step-by-step payment request submission form will walk users through filing correct and complete payment requests. Include your own unique instructions on how to properly submit a payment request in order to get paid.",
+          "A step-by-step payment request  form will walk users through filing correct and complete payment requests. Include your own unique instructions on how to properly submit a payment request in order to get paid.",
         media: {
           src: "/11.png",
           srcWidth: 1400,
@@ -149,7 +139,7 @@ export const featureSections: FeatureSections = [
       {
         title: "Approve Payment Requests",
         description:
-          "Review payment requests that have been submitted. Approve the legitimate requests you wish to pay. ",
+          "Review payment requests that have been submitted. Approve the legitimate requests you wish to pay and reject or delete the others. ",
         media: {
           src: "/13.png",
           srcWidth: 1400,
@@ -177,9 +167,9 @@ export const featureSections: FeatureSections = [
         },
       },
       {
-        title: "Automatically send payments",
+        title: "Pay Instantly",
         description:
-          "Pay automatically using Wise & Paypal integrations or manually mark expenses that have been paid off-platform (for example: from your bank account) as paid.",
+          "Pay using Wise & Paypal integrations or manually mark expenses that have been paid off-platform (for example: from your bank account) as paid.",
         media: {
           src: "/16.png",
           srcWidth: 1400,
@@ -189,7 +179,7 @@ export const featureSections: FeatureSections = [
       {
         title: "Automated security checks protect against fraud",
         description:
-          "Real time security checks are integrated into the payment tool and will alert you if something is suspicious. A green fraud indicator means you can safely make a payment. A red fraud indicator means you should stop and review the request.",
+          "Real time security checks are integrated into the payment tool and will alert you if something is suspicious. Green means safe to pay, yellow is a heads up and red requires attention.",
         media: {
           src: "/17.png",
           srcWidth: 1400,
@@ -199,7 +189,7 @@ export const featureSections: FeatureSections = [
       {
         title: "Quickly resolve issues",
         description:
-          "Each expense is an automatic communication channel with all the people involved in its submission, review and payment. All communications are recorded for future reference.",
+          "Each expense is a conversation thread with all the people involved in its submission, review and payment. The   correspondence is  saved for future reference.",
         media: {
           src: "/18.png",
           srcWidth: 1400,
